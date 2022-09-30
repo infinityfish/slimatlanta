@@ -47,13 +47,13 @@ const Home: NextPage = () => {
         </div>
 
 {/* @ts-ignore */}
-<iframe className='yt-video' width="660" height="360" src="https://www.youtube.com/embed/TJb7tnkGd88?start=0&end=339&controls=0&rel=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+<iframe className='yt-video' width="660" height="360" src="https://www.youtube.com/embed/TJb7tnkGd88?start=7&end=339&controls=0&rel=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
 
 <div className='font20'> 
           Get Your PreLaunch Discount Below
         </div>
 {/* @ts-ignore */}
-<iframe className='yt-video' width="660" height="360" src="https://www.youtube.com/embed/3Fq69SrRohg?start=0&end=225&controls=0&rel=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+<iframe className='yt-video' width="660" height="360" src="https://www.youtube.com/embed/3Fq69SrRohg?start=7&end=225&controls=0&rel=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
 
         <div className='font20'> 
           Get Your PreLaunch Discount Below
