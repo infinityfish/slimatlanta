@@ -22,11 +22,11 @@ const Header: React.FC = () => {
 
   const right = (
     <div className="right">
-      <Link href="#">
+      {/* <Link href="#">
         <a><span className='bold font16'>About Us </span> </a>
       </Link>{' '}
-      {' | '}
-      <Link href="#">
+      {' | '} */}
+      <Link href="/contact">
         <a><span className='bold font16'>Contact Us</span></a>
       </Link>
     </div>

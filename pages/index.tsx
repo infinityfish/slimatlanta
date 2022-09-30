@@ -1,10 +1,30 @@
 import type { NextPage } from 'next'
+import { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import ReactPlayer from 'react-player';
+import styles from '../styles/Form.module.css'
+import axios from 'axios';
+import { useForm, SubmitHandler } from 'react-hook-form';
+import { useRouter } from 'next/router';
 
 const Home: NextPage = () => {
+  const router = useRouter();
+
+  const { register, handleSubmit, watch,formState: { errors }} = useForm();
+
+
+  const onSubmit: SubmitHandler<any> = (data: any) => {
+    axios
+      .post('/api/emailleadinfo', data)
+      .then((_res) => {
+        alert('Your Message has been emailed to admin');
+        router.push('/clientdetails')
+      })
+      .catch((err) => console.log(err));
+      
+      console.log(data);
+  };
+
   return (
     <>
       <Head>
@@ -42,11 +62,57 @@ const Home: NextPage = () => {
             <iframe className='yt-video' width="660" height="360" src="https://www.youtube.com/embed/Enh4MQK7lZA?start=0&end=24&controls=0&rel=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
               
 
-      {/* @ts-ignore */}
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd-gPXIqobl3a_UJ5Bs7dr426RK1NUUXp9g5WAgMIC8TI3gew/viewform?embedded=true" className="googleform" width="640" height="760" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
-      
+
            
-      
+        
+                <div className={styles.formContainer}>
+
+                  <h3 className="font20 bold">Enter your info below to receive your PreLaunch Discount by text message</h3>
+                            
+                        <form onSubmit={handleSubmit(onSubmit)}>
+                    {/* <input
+                      {...register('csrfToken')}
+                      type="hidden"
+                      defaultValue={csrfToken}
+                    /> */}
+
+                    <input
+                      {...register('name', {required: true, maxLength: 65, minLength: 2,pattern: /[A-Za-z0-9_.-]/})}
+                      type="text"
+                      placeholder="Enter Your Full Name "
+                      className={styles.formInput}
+                    />
+                    <p className={styles.formError}>
+                      {errors.name && <span> Name is required</span>}
+                    </p>
+
+                    <input
+                      {...register('email', { required: true, maxLength: 65, minLength: 4})}
+                      type="email"
+                      placeholder="Enter your email address "
+                      className={styles.formInput}
+                    />
+                    <p className={styles.formError}>
+                      {errors.email && <span> Email is required</span>}
+                    </p>{' '}
+
+                    <input
+                      {...register('phone', {pattern: /^\d+$/, required: true})}
+                      type="text"
+                      placeholder="Enter your cell phone number   "
+                      className={styles.formInput}
+                    />
+                    <p className={styles.formError}>
+                      {errors.phone && <span>Your Cell Phone Number is required</span>}
+                    </p>
+                    
+                    <button type="submit" className="cta-btn">
+                      Get PreLaunch Discount
+                    </button>
+                  </form>
+                </div>
+                
+
       </main>
 
     </>

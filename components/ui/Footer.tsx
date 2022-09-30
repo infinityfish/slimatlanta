@@ -26,15 +26,15 @@ const Footer = () => {
         <a> SlimAtlanta by ReGenesisDoc LLC </a>
       </Link>
       {' | '}
-      <Link href="#">
+      <Link href="/privacy">
         <a> Privacy Policy </a>
       </Link>
       {' | '}
-      <Link href="#">
+      <Link href="/terms">
         <a> Terms and conditions </a>
       </Link>
       {' | '}
-      <Link href="#">
+      <Link href="/contact">
         <a> Contact Us </a>
       </Link>
 
