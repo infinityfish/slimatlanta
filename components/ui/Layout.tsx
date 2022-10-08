@@ -15,7 +15,10 @@ const Layout = ({ children }: Props) => {
         <title>SlimAtlanta by ReGenesisDoc LLC </title>
         <link rel="shortcut icon" href="/favicon.ico" />
        
-        <Script id="tiktok-pixel"
+        
+      </Head>
+
+      <Script id="tiktok-pixel"
           strategy="afterInteractive">
             
           {`!function (w, d, t) {
@@ -29,7 +32,7 @@ const Layout = ({ children }: Props) => {
           `}
 
           </Script>
-      </Head>
+          
        <Script strategy="afterInteractive" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
    
       
