@@ -34,29 +34,29 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h2 className='font20 bold'>Lose Fat, Slim Down, WITHOUT exercise, dieting, surgery, or drugs. You will like your results at the first treatment, OR you get your money back. We use the UltraSlim device which is FDA-cleared for immediate fat reduction.</h2>
+        <h2 className='font20 bold'>How to get rid of fat in stubborn areas without surgery. <br />We use the UltraSlim device which is FDA-cleared for immediate fat reduction.</h2>
         <div className='font20'> 
-          Please Fill out the Form below to get our PreLaunch Discount in Atlanta and in Tucker
+          Please Fill out the Form below for a free consultation
         </div>
       
        {/* @ts-ignore */}
         <iframe className='yt-video' width="660" height="360" src="https://www.youtube.com/embed/_B-b_066ghQ?start=0&end=185&controls=0&rel=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
 
         <div className='font20'> 
-          Get Your PreLaunch Discount Below
+        Request a free consultation below
         </div>
 
 {/* @ts-ignore */}
 <iframe className='yt-video' width="660" height="360" src="https://www.youtube.com/embed/TJb7tnkGd88?start=7&end=339&controls=0&rel=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
 
 <div className='font20'> 
-          Get Your PreLaunch Discount Below
+Request a free consultation below
         </div>
 {/* @ts-ignore */}
 <iframe className='yt-video' width="660" height="360" src="https://www.youtube.com/embed/3Fq69SrRohg?start=7&end=225&controls=0&rel=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
 
         <div className='font20'> 
-          Get Your PreLaunch Discount Below
+        Request a free consultation below
         </div>
             {/* @ts-ignore */}
             <iframe className='yt-video' width="660" height="360" src="https://www.youtube.com/embed/Enh4MQK7lZA?start=0&end=24&controls=0&rel=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
@@ -67,7 +67,7 @@ const Home: NextPage = () => {
         
                 <div className={styles.formContainer}>
 
-                  <h3 className="font20 bold">Enter your info below to receive your PreLaunch Discount by text message</h3>
+                  <h3 className="font20 bold">Enter your info below to request a free consultation</h3>
                             
                         <form onSubmit={handleSubmit(onSubmit)}>
                     {/* <input
@@ -107,7 +107,7 @@ const Home: NextPage = () => {
                     </p>
                     
                     <button type="submit" className="cta-btn">
-                      Get PreLaunch Discount
+                      Request a Free consultation
                     </button>
                   </form>
                 </div>
