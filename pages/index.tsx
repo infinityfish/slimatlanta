@@ -54,27 +54,25 @@ Request a free consultation below
         </div>
 {/* @ts-ignore */}
 <iframe className='yt-video' width="660" height="360" src="https://www.youtube.com/embed/3Fq69SrRohg?start=7&end=225&controls=0&rel=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-
-        <div className='font20'> 
+<div className='font20'> 
         Request a free consultation below
         </div>
+ {/* @ts-ignore */}
+ <iframe className='yt-video' width="660" height="360" src="https://www.youtube.com/embed/Enh4MQK7lZA?start=0&end=24&controls=0&rel=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+             
+        <div className='font20'> 
+        ....
+        </div>
+            
             {/* @ts-ignore */}
-            <iframe className='yt-video' width="660" height="360" src="https://www.youtube.com/embed/Enh4MQK7lZA?start=0&end=24&controls=0&rel=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-              
-
-
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScLGTi0YNAzw10-H06WoAFe25z4DXOiqlkRTSphE98BJ8av0w/viewform?embedded=true" className='googleform' width="640" height="1200" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
            
         
-                <div className={styles.formContainer}>
+                {/* <div className={styles.formContainer}>
 
                   <h3 className="font20 bold">Enter your info below to request a free consultation</h3>
                             
                         <form onSubmit={handleSubmit(onSubmit)}>
-                    {/* <input
-                      {...register('csrfToken')}
-                      type="hidden"
-                      defaultValue={csrfToken}
-                    /> */}
 
                     <input
                       {...register('name', {required: true, maxLength: 65, minLength: 2,pattern: /[A-Za-z0-9_.-]/})}
@@ -109,8 +107,8 @@ Request a free consultation below
                     <button type="submit" className="cta-btn">
                       Request a Free consultation
                     </button>
-                  </form>
-                </div>
+                  </form> 
+                </div>*/}
                 
 
       </main>

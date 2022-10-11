@@ -152,14 +152,33 @@ nav {
 
 
 /* start video player */
+.yt-video {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 648px;
+  height: 364px;
+}
 
+.googleform {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 640px;
+  height: 1200px;
+}
 
 @media only screen and (max-width: 420px) {
   .yt-video {
-    width: 360px;
-    height: 202spx;
+    width: 350px;
+    height: 202px;
     }
   }
+
+  @media only screen and (max-width: 420px) {
+    .googleform {
+      width: 350px;
+      height: 1200px;
+      }
+    }
 
 
 @media (prefers-color-scheme: dark) {
